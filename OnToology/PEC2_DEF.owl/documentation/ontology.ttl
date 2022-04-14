@@ -1,0 +1,569 @@
+@prefix : <http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#> .
+
+<http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasGender
+:hasGender rdf:type owl:ObjectProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :Gender .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasKnownWorld
+:hasKnownWorld rdf:type owl:ObjectProperty ;
+               rdfs:domain :Character ;
+               rdfs:range :KnownWorld .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge
+:hasAge rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain :Character ;
+        rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasExperience
+:hasExperience rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Actor ;
+               rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth
+:hasHeigth rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Character ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameActor
+:hasNameActor rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Actor ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameCharacter
+:hasNameCharacter rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Character ;
+                  rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :TechnicalDetail ;
+       rdfs:comment "Class with Actor's properties" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Age
+:Age rdf:type owl:Class ;
+     rdfs:subClassOf :Character ;
+     rdfs:comment "The age of the characters" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Average
+:Average rdf:type owl:Class ;
+         rdfs:subClassOf :Heigth ;
+         rdfs:comment "Specifies that the character is in the average" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#CanonDetail
+:CanonDetail rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing ;
+             rdfs:comment "Properties about the story of Game Of Thrones" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Chapters
+:Chapters rdf:type owl:Class ;
+          rdfs:subClassOf :Season ;
+          rdfs:comment "Chapters of the season" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :CanonDetail ;
+           rdfs:comment "Class about the characters of Game of thrones" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Emmy
+:Emmy rdf:type owl:Class ;
+      rdfs:subClassOf :Reward ;
+      rdfs:comment "The emmy rewards of game of thrones" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#EndDate
+:EndDate rdf:type owl:Class ;
+         rdfs:subClassOf :TechnicalDetail ;
+         rdfs:comment "Specifies the end date of the game of thrones" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Essos
+:Essos rdf:type owl:Class ;
+       rdfs:subClassOf :KnownWorld ;
+       rdfs:comment "Specifies that the character is from Essos" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Experience
+:Experience rdf:type owl:Class ;
+            rdfs:subClassOf :Actor ;
+            rdfs:comment "Specifies the experience of the actor" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Experienced
+:Experienced rdf:type owl:Class ;
+             rdfs:subClassOf :Experience ;
+             owl:disjointWith :Junior ;
+             rdfs:comment "Specifies that the character is experienced" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Gender
+:Gender rdf:type owl:Class ;
+        rdfs:subClassOf :Character ;
+        rdfs:comment "The gender of the character" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#GoldenGlobe
+:GoldenGlobe rdf:type owl:Class ;
+             rdfs:subClassOf :Reward ;
+             rdfs:comment "The golden globe rewards of Game of thrones" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Heigth
+:Heigth rdf:type owl:Class ;
+        rdfs:subClassOf :Character ;
+        rdfs:comment "The heigth of the character" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Joung
+:Joung rdf:type owl:Class ;
+       rdfs:subClassOf :Age ;
+       rdfs:comment "Specifies that the character is Joung" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Junior
+:Junior rdf:type owl:Class ;
+        rdfs:subClassOf :Experience ;
+        rdfs:comment "Specifies that the character is junior" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#KnownWorld
+:KnownWorld rdf:type owl:Class ;
+            rdfs:subClassOf :Character ;
+            rdfs:comment "The country of the character" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Man
+:Man rdf:type owl:Class ;
+     rdfs:subClassOf :Gender ;
+     owl:disjointWith :Woman ;
+     rdfs:comment "Specifies that the character is a Man" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Medium
+:Medium rdf:type owl:Class ;
+        rdfs:subClassOf :Age ;
+        rdfs:comment "Specifies that the character is Medium age" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Old
+:Old rdf:type owl:Class ;
+     rdfs:subClassOf :Age ;
+     rdfs:comment "Specifies that the character is old" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#ReleaseDate
+:ReleaseDate rdf:type owl:Class ;
+             rdfs:subClassOf :Season ;
+             rdfs:comment "Release date of the season" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Reward
+:Reward rdf:type owl:Class ;
+        rdfs:subClassOf :TechnicalDetail ;
+        rdfs:comment "Specifies the won rewards of Game of thrones" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Season
+:Season rdf:type owl:Class ;
+        rdfs:subClassOf :TechnicalDetail ;
+        rdfs:comment "Class about the seasons of game of thrones" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Short
+:Short rdf:type owl:Class ;
+       rdfs:subClassOf :Heigth ;
+       rdfs:comment "Specifies that the character is short" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Sothoryos
+:Sothoryos rdf:type owl:Class ;
+           rdfs:subClassOf :KnownWorld ;
+           rdfs:comment "Specifies that the character is from Sothoryos" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Tall
+:Tall rdf:type owl:Class ;
+      rdfs:subClassOf :Heigth ;
+      rdfs:comment "Specifies that the character is Tall" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#TechnicalDetail
+:TechnicalDetail rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing ;
+                 rdfs:comment "Properties about the technical details of Game Of Thrones" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Ulthos
+:Ulthos rdf:type owl:Class ;
+        rdfs:subClassOf :KnownWorld ;
+        rdfs:comment "Specifies that the character is from Ulthos" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Westeros
+:Westeros rdf:type owl:Class ;
+          rdfs:subClassOf :KnownWorld ;
+          rdfs:comment "Specifies that the character is from Westeros" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Woman
+:Woman rdf:type owl:Class ;
+       rdfs:subClassOf :Gender ;
+       rdfs:comment "Specifies that the character is a Woman" .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:comment [ rdfs:comment """Ontología:
+Game Of Thrones
+
+Group:
+Jordi Segura Lario
+Adrián Vázquez"""
+                       ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Daenerys_Targaryen
+:Daenerys_Targaryen rdf:type owl:NamedIndividual ,
+                             :Character ;
+                    :hasGender :Daenerys_Targaryen ;
+                    :hasKnownWorld :Daenerys_Targaryen ;
+                    :hasAge 18 ;
+                    :hasHeigth 160 ;
+                    :hasNameCharacter "Daenerys Targaryen" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Emilia_Isobel
+:Emilia_Isobel rdf:type owl:NamedIndividual ,
+                        :Actor ;
+               :hasExperience 15 ;
+               :hasNameActor "Emilia Isobel" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Jon_Nieve
+:Jon_Nieve rdf:type owl:NamedIndividual ,
+                    :Character ;
+           :hasGender :Jon_Nieve ;
+           :hasKnownWorld :Jon_Nieve ;
+           :hasAge 24 ;
+           :hasHeigth 175 ;
+           :hasNameCharacter "Jon Nieve" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Kit_Harington
+:Kit_Harington rdf:type owl:NamedIndividual ,
+                        :Actor ;
+               :hasExperience 14 ;
+               :hasNameActor "Kit Harington" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Peter_Dinklage
+:Peter_Dinklage rdf:type owl:NamedIndividual ,
+                         :Actor ;
+                :hasExperience 6 ;
+                :hasNameActor "Peter Dinklage" .
+
+
+###  http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Tyrion_Lannister
+:Tyrion_Lannister rdf:type owl:NamedIndividual ,
+                           :Character ;
+                  :hasGender :Tyrion_Lannister ;
+                  :hasKnownWorld :Tyrion_Lannister ;
+                  :hasAge 39 ;
+                  :hasHeigth 135 ;
+                  :hasNameCharacter "Tyrion Lannister" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAge ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 36 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#a> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 70 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Medium ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAge ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 35 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Joung ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasAge ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 70 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Old ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasHeigth ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#h> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 170 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Short ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasHeigth ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#h> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 171 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#h> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 185 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Average ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasHeigth ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#h>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#h> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 185 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Tall ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
