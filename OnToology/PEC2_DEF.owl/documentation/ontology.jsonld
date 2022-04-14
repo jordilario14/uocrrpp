@@ -1,0 +1,895 @@
+[ {
+  "@id" : "_:genid1",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontología:\nGame Of Thrones\n\nGroup:\nJordi Segura Lario\nAdrián Vázquez"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Joung"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    }, {
+      "@id" : "_:genid23"
+    }, {
+      "@id" : "_:genid19"
+    }, {
+      "@id" : "_:genid15"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid27"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "70"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "36"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    }, {
+      "@id" : "_:genid4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Medium"
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid36"
+    }, {
+      "@id" : "_:genid34"
+    }, {
+      "@id" : "_:genid30"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid38"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "70"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Old"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid47"
+    }, {
+      "@id" : "_:genid45"
+    }, {
+      "@id" : "_:genid41"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid49"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "35"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "170"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Short"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid62"
+    }, {
+      "@id" : "_:genid60"
+    }, {
+      "@id" : "_:genid56"
+    }, {
+      "@id" : "_:genid52"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid64"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "185"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "171"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Average"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid73"
+    }, {
+      "@id" : "_:genid71"
+    }, {
+      "@id" : "_:genid67"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid75"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#h"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "185"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#h"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Tall"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class with Actor's properties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#TechnicalDetail"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The age of the characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Average",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is in the average"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Heigth"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#CanonDetail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties about the story of Game Of Thrones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Chapters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Chapters of the season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class about the characters of Game of thrones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#CanonDetail"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Daenerys_Targaryen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasGender" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Daenerys_Targaryen"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "160"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasKnownWorld" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Daenerys_Targaryen"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameCharacter" : [ {
+    "@value" : "Daenerys Targaryen"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Emilia_Isobel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasExperience" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameActor" : [ {
+    "@value" : "Emilia Isobel"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Emmy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The emmy rewards of game of thrones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Reward"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#EndDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the end date of the game of thrones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#TechnicalDetail"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Essos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is from Essos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#KnownWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Experience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the experience of the actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Experienced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is experienced"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Experience"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Junior"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The gender of the character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#GoldenGlobe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The golden globe rewards of Game of thrones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Reward"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Heigth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The heigth of the character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Jon_Nieve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "24"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasGender" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Jon_Nieve"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "175"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasKnownWorld" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Jon_Nieve"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameCharacter" : [ {
+    "@value" : "Jon Nieve"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Joung",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is Joung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Age"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Junior",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is junior"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Experience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Kit_Harington",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasExperience" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "14"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameActor" : [ {
+    "@value" : "Kit Harington"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#KnownWorld",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The country of the character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Man",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is a Man"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Gender"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Woman"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Medium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is Medium age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Age"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Old",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is old"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Age"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Peter_Dinklage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasExperience" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "6"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameActor" : [ {
+    "@value" : "Peter Dinklage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#ReleaseDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Release date of the season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Reward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies the won rewards of Game of thrones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#TechnicalDetail"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Class about the seasons of game of thrones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#TechnicalDetail"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is short"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Heigth"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Sothoryos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is from Sothoryos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#KnownWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Tall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is Tall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Heigth"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#TechnicalDetail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Properties about the technical details of Game Of Thrones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Tyrion_Lannister",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "39"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasGender" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Tyrion_Lannister"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "135"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasKnownWorld" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Tyrion_Lannister"
+  } ],
+  "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameCharacter" : [ {
+    "@value" : "Tyrion Lannister"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Ulthos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is from Ulthos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#KnownWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Westeros",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is from Westeros"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#KnownWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Woman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that the character is a Woman"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Gender"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasExperience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasGender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Gender"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasKnownWorld",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#KnownWorld"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameActor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#Thing",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "urn:swrl:var#a",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#h",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

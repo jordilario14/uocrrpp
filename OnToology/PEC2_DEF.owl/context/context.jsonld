@@ -1,0 +1,131 @@
+{
+  "@context" : {
+    "Age" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Age"
+    },
+    "Reward" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Reward"
+    },
+    "Woman" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Woman"
+    },
+    "Westeros" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Westeros"
+    },
+    "Junior" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Junior"
+    },
+    "Essos" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Essos"
+    },
+    "CanonDetail" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#CanonDetail"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "EndDate" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#EndDate"
+    },
+    "Sothoryos" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Sothoryos"
+    },
+    "Experienced" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Experienced"
+    },
+    "Short" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Short"
+    },
+    "Medium" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Medium"
+    },
+    "GoldenGlobe" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#GoldenGlobe"
+    },
+    "Average" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Average"
+    },
+    "TechnicalDetail" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#TechnicalDetail"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Character"
+    },
+    "Man" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Man"
+    },
+    "Gender" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Gender"
+    },
+    "Emmy" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Emmy"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Actor"
+    },
+    "hasAge" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasGender" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasGender",
+      "@type" : "@id"
+    },
+    "Tall" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Tall"
+    },
+    "Old" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Old"
+    },
+    "hasNameActor" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameActor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "KnownWorld" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#KnownWorld"
+    },
+    "Ulthos" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Ulthos"
+    },
+    "Experience" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Experience"
+    },
+    "ReleaseDate" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#ReleaseDate"
+    },
+    "hasExperience" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasExperience",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasHeigth" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasHeigth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasNameCharacter" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasNameCharacter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasKnownWorld" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#hasKnownWorld",
+      "@type" : "@id"
+    },
+    "Heigth" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Heigth"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Season"
+    },
+    "Chapters" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Chapters"
+    },
+    "Joung" : {
+      "@id" : "http://www.semanticweb.org/jordi/ontologies/2022/3/untitled-ontology-12#Joung"
+    }
+  }
+}
